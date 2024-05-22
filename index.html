@@ -18,40 +18,52 @@
 
 
         <!-- nav sinistra-->
-        <nav>
+        <nav id="nav-principale">
 
             <!-- top nav -->
-            <div id="nav-top">
-                <img src="img/logo.svg" alt="Logo">
+            <div class="top-nav">
 
-                <ul id="first-navigation">
-                    <li class="f-nav-item-active f-nav-item"><i class="fa-solid fa-house"></i>Home</li>
-                    <li class="f-nav-item"><i class="fa-solid fa-magnifying-glass"></i>Cerca</li>
-                    <li class="f-nav-item"><i class="fa-solid fa-lines-leaning"></i>La tua libreria</li>
+                <!-- logo -->
+                <img src="img/logo.svg" alt="logo grande">
+
+                <!-- nav principale -->
+                <ul class="container-nav-item space-nav">
+                    <li><a class="nav-item active-item" href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a class="nav-item" href="#"><i class="fa-solid fa-magnifying-glass"></i>Cerca</a></li>
+                    <li><a class="nav-item" href="#"><i class="fa-solid fa-lines-leaning"></i>La tua libreria</a></li>
                 </ul>
 
-                <h2>PLAYLIST</h2>
-                <ul id="second-navigation">
-                    <li class="s-nav-item flex-nav"><i class="fa-solid fa-square-plus"></i><a href="#">Crea Playlist</a></li>
-                    <li class="s-nav-item">Nome Playlist</li>
-                    <li class="s-nav-item">Nome Playlist</li>
-                    <li class="s-nav-item">Nome Playlist</li>
-                    <li class="s-nav-item">Nome Playlist</li>
-                    <li class="s-nav-item">Nome Playlist</li>
-                    <li class="s-nav-item">Nome Playlist</li>
-                    <li class="s-nav-item">Nome Playlist</li>
-                </ul>
             </div>
 
-            <div id="nav-bottom">
-                <span><i class="fa-regular fa-circle-down"></i> Installa app</span>
+            <h3>Playlist</h3>
+
+            <!-- playlist scroll -->
+            <div class="scroll-section">
+
+                <ul class="playlist-container space-nav">
+                    <li><a class="nav-item" href="#"><i class="fa-solid fa-square-plus"></i>Crea playlist</a></li>
+                    <li><a class="nav-item" href="#">Nome playlist</a></li>
+                    <li><a class="nav-item" href="#">Nome playlist</a></li>
+                    <li><a class="nav-item" href="#">Nome playlist</a></li>
+                    <li><a class="nav-item" href="#">Nome playlist</a></li>
+                    <li><a class="nav-item" href="#">Nome playlist</a></li>
+                    <li><a class="nav-item" href="#">Nome playlist</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Persona -->
+            <div class="container-bottom-nav">
+                <div class="bottom-item-nav installa">
+                    <img src="img/download.svg" alt="profile img">
+                    <span>Installa app</span>
+                </div>
                 <hr>
-                <div class="person">
-                    <img src="img/profile.svg" alt="">
+                <div class="bottom-item-nav persona">
+                    <img src="img/profile.svg" alt="profile img">
                     <h4>John Doe</h4>
                 </div>
             </div>
-
         </nav>
 
         <!-- contenuto principale -->

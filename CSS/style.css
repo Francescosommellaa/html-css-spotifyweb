@@ -8,27 +8,38 @@
 
 li {
     list-style: none;
-    color: rgba(255, 255, 255, 0.4);
     font-size: 18px;
 }
-li:active {
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.4);
+}
+a:active {
+    color: white;
+}
+a:hover {
     color: white;
 }
 
 /* regole generali macrostruttura */
 #container-top {
     display: flex;
-    height: calc(100vh - 100px); 
 }
 
-nav {
+#nav-principale {
     background-color: #000;
-    width: 180px;
+    height: calc(100vh - 100px);
+    width: 250px;
+    overflow: hidden;
+    position: relative;
 }
 
 main {
     background-color: #141922;
-    width: calc(100vw - 180px);
+    height: calc(100vh - 100px);
+    width: calc(100vw - 250px);
+    overflow: hidden;
 }
 
 #player {
@@ -37,101 +48,116 @@ main {
     width: 100%;
 }
 
-/* nav */
-#nav-top {
-    height: calc(100vh - 180px);
+/* nav superiore */
+.top-nav img {
+    margin: 1em;
+    width: 140px;
 }
 
-#nav-top img {
-    width: 120px;
-    margin: 0.8em 0.8em 0;
-}
-
-#nav-top h2 {
-    color: white;
-    font-size: 18px;
-    font-weight: 700;
-    margin: 1.2em 0 0.4em 0.8em;
-}
-
-.nav-item-active {
-    color: rgba(255, 255, 255, 0.915);
-}
-
-/* first nav */
-#first-navigation {
-    margin: 1em 0;
-}
-
-.f-nav-item i {
-    padding: 0.2em 0.4em 0.2em 0.8em;
-    font-size: 18px;
-    margin: 0.2em 0;
-}
-
-.f-nav-item-active {
-    color: white;
-}
-
-.f-nav-item-active i {
-    border-left: 4px solid green;
-}
-
-
-/* second nav */
-.s-nav-item {
-    margin: 0.4em 0 0.8em 0.8em;
-}
-
-.s-nav-item i {
-    font-size: 50px;
-}
-
-.s-nav-item a {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.4);
-    margin-left: 0.4em;
-}
-
-.flex-nav {
+/* nav item flex */
+.nav-item {
     display: flex;
     align-items: center;
 }
 
+/* regole navigazione */
+.space-nav li{
+    margin-bottom: 1em;
+    font-size: 16px;
+}
 
-/* nav-bottom */
-#nav-bottom {
-    background-color: black;
-    width: 100%;
-    height: 80px;
+.nav-item i {
+    font-size: 24px;
+    padding: 0 0.6em 0 0.8em;
+}
+
+/* navigazione attiva */
+.active-item {
     color: white;
 }
 
-.person {
-    margin: 0 0.8em;
+.active-item i {
+    border-left: 4px solid green;
+}
+
+h3 {
+    color: white;
+    margin: 1em 0 1em 0.8em;
+}
+
+/* playlist section */
+.playlist-container {
+    height: 200px;
+    margin: 0 0 0 0.8em;
+    overflow-y: auto;
+}
+
+.nav-item .fa-square-plus {
+    font-size: 40px;
+    padding: 0 0.4em 0 0;
+}
+
+/* scrollbar */
+.playlist-container::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 10px;
+}
+
+.playlist-container::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ffffff1d;
+}
+
+.playlist-container::-webkit-scrollbar-thumb {
+    background-color: green;
+    border-radius: 10px;
+}
+
+/* bottom container navigazione */
+.container-bottom-nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: rgba(255, 255, 255, 0.4);
+    height: 120px;
+    padding: 0.8em;
+}
+
+.bottom-item-nav {
     display: flex;
+    border-color: rgba(255, 255, 255, 0.4);
     align-items: center;
     gap: 0.4em;
 }
 
-.person img {
-    width: 24px;
-    height: 24px;
+hr {
+    border-color: rgba(255, 255, 255, 0.4);
+    margin: 1em 0;
+}
+
+.installa img {
+    width: 28px;
+    height: 28px;
+}
+
+.persona {
+    margin-bottom: 1em;
+}
+.installa:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.persona img {
+    display: block;
+    width: 28px;
+    height: 28px;
     background-color: gray;
     border-radius: 50%;
 }
 
-#nav-bottom span {
-    margin: 0 0.8em;
-    color: rgba(255, 255, 255, 0.4);
-}
-
-span i {
-    padding: 0 0.4em;
-}
-
-
-#nav-bottom hr {
-    margin: 1em 0.8em;
-    border-color: rgba(255, 255, 255, 0.4);
+.persona h4 {
+    color: white;
+    font-weight: 800;
 }
