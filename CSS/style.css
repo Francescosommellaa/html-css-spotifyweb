@@ -4,3 +4,25 @@
     box-sizing: border-box;
     font-family: sans-serif, open-sans, Arial, Helvetica;
 }
+
+/* regole generali macrostruttura */
+#container-top {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+nav {
+    background-color: #000;
+    width: 180px;
+}
+
+main {
+    background-color: #141922;
+    width: calc(100vw - 180px);
+}
+
+#player {
+    background-color: #282828;
+    height: 80px;
+    width: 100%;
+}
