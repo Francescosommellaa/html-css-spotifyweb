@@ -29,7 +29,7 @@ a:hover {
 
 #nav-principale {
     background-color: #000;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 120px);
     width: 250px;
     overflow: hidden;
     position: relative;
@@ -37,15 +37,19 @@ a:hover {
 
 main {
     background-color: #141922;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 120px);
     width: calc(100vw - 250px);
     overflow: hidden;
 }
 
 #player {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #282828;
-    height: 100px;
+    height: 120px;
     width: 100%;
+    padding: 0.8em 0.6em;
 }
 
 /* nav superiore */
@@ -160,4 +164,87 @@ hr {
 .persona h4 {
     color: white;
     font-weight: 800;
+}
+
+/* player */
+ /* left player */
+ .left-player {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    gap: 1.5em;
+ }
+
+/* autore */
+.info-autore img {
+    height: 50px;
+    width: 50px;
+}
+
+.info-autore {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.text-autore h5 {
+    color: white;
+}
+.text-autore span {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* icone secondarie */
+.icon-secondary i {
+    color: rgba(255, 255, 255, 0.4);
+    margin-left: 0.8em;
+}
+
+
+/* main zone */
+.main-zone {
+    width: 40%;
+    text-align: center;
+}
+
+.action-iteams{
+   color: white;
+   font-size: 24px;
+}
+
+.action-iteams i {
+    padding: 0 1em 1em;
+}
+
+.main-progres-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    color: white;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #404040;
+    height: 5px;
+    position: relative;
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+}
+
+/* impostazioni */
+.setting {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    gap: 1em;
+    color: white;
 }
