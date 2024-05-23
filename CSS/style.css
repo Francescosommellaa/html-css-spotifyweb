@@ -31,7 +31,7 @@ a:hover {
     background-color: #000;
     height: calc(100vh - 120px);
     width: 250px;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
 }
 
@@ -39,7 +39,7 @@ main {
     background-color: #141922;
     height: calc(100vh - 120px);
     width: calc(100vw - 250px);
-    overflow: hidden;
+    overflow: auto;
 }
 
 #player {
@@ -193,10 +193,6 @@ hr {
 }
 
 /* navigazione */
-#nav-secondaria {
-    margin: 0.8em;
-}
-
 .sec-nav-container-item {
     display: flex;
     width: 100%;
@@ -204,13 +200,13 @@ hr {
     gap: 2em;
 }
 
-.sec-nav-item-active {
+.sec-nav-item {
     position: relative;
     height: 30px;
-    margin: 0.8em 0;
+    margin: 1.5em 0 2em;
 }
 
-.sec-nav-item-active a{
+.sec-nav-item a{
    font-size: 16px;
 }
 
@@ -224,6 +220,47 @@ hr {
 }
 
 
+/* contenuto principale */
+#contenuto-principale {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#contenuto-principale h2 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 1em;
+    height: 100%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+    width: 100%;
+    min-width: 600px;
+}
+
+.card-album {
+    text-align: center;
+    color: white;
+    width: calc(100% / 6 - 1em);
+}
+
+.card-album img{
+    width: 100%;
+}
+
+
+.card-album h4 {
+    font-size: 18px;
+    margin: 0.8em 0;
+}
+
+.card-album span {
+    color: rgba(255, 255, 255, 0.625);
+}
 
 /* player */
  /* left player */
