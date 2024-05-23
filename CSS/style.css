@@ -91,8 +91,11 @@ h3 {
 
 /* playlist section */
 .playlist-container {
-    height: 200px;
-    margin: 0 0 0 0.8em;
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    height: 100%;
+    margin: 0 0 0 1em;
     overflow-y: auto;
 }
 
@@ -103,7 +106,7 @@ h3 {
 
 /* scrollbar */
 .playlist-container::-webkit-scrollbar {
-    width: 4px;
+    width: 2px;
     border-radius: 10px;
 }
 
@@ -165,6 +168,62 @@ hr {
     color: white;
     font-weight: 800;
 }
+
+/* main */
+
+/* container upgrade */
+.container-upgrade {
+    background-color: #00000050;
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0.8em;
+}
+
+.container-upgrade button {
+    border: 2px solid white;
+    padding: 1em 2em;
+    border-radius: 20px;
+    background-color: #ffffff00;
+    color: white;
+}
+
+/* navigazione */
+#nav-secondaria {
+    margin: 0.8em;
+}
+
+.sec-nav-container-item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2em;
+}
+
+.sec-nav-item-active {
+    position: relative;
+    height: 30px;
+    margin: 0.8em 0;
+}
+
+.sec-nav-item-active a{
+   font-size: 16px;
+}
+
+.absolute-line-active {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+    left: 30%;
+    height: 100%;
+    border-bottom: 4px solid green;
+}
+
+
 
 /* player */
  /* left player */
