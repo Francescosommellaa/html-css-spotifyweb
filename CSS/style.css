@@ -31,8 +31,8 @@ a:hover {
     background-color: #000;
     height: calc(100vh - 120px);
     width: 250px;
-    overflow: auto;
     position: relative;
+    overflow: hidden;
 }
 
 main {
@@ -90,13 +90,12 @@ h3 {
 }
 
 /* playlist section */
-.playlist-container {
+.scroll-section {
     display: flex;
     flex-direction: column;
-    min-height: 300px;
-    height: 100%;
+    overflow: auto;
+    height: 300px;
     margin: 0 0 0 1em;
-    overflow-y: auto;
 }
 
 .nav-item .fa-square-plus {
