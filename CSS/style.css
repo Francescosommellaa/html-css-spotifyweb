@@ -226,11 +226,14 @@ hr {
     margin: 0 auto;
 }
 
-#contenuto-principale h2 {
+.title h2 {
     font-size: 30px;
     color: white;
-    margin-bottom: 1em;
-    height: 100%;
+}
+
+.title {
+    color: rgba(255, 255, 255, 0.581);
+    margin: 2em 0 1.5em;
 }
 
 .flex-container {
@@ -246,6 +249,7 @@ hr {
     text-align: center;
     color: white;
     width: calc(100% / 6 - 1em);
+    margin: 2em 0;
 }
 
 .card-album img{
@@ -260,6 +264,27 @@ hr {
 
 .card-album span {
     color: rgba(255, 255, 255, 0.625);
+}
+
+.card-rounded img {
+    border-radius: 50%;
+}
+
+
+/* scrollbar */
+main::-webkit-scrollbar {
+    width: 2px;
+    border-radius: 10px;
+}
+
+main::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ffffff1d;
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: green;
+    border-radius: 10px;
 }
 
 /* player */
