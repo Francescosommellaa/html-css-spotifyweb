@@ -65,7 +65,7 @@ main {
 }
 
 /* regole navigazione */
-.space-nav li{
+.space-nav li {
     margin-bottom: 1em;
     font-size: 16px;
 }
@@ -104,17 +104,17 @@ h3 {
 }
 
 /* scrollbar */
-.playlist-container::-webkit-scrollbar {
+.scroll-section::-webkit-scrollbar {
     width: 2px;
     border-radius: 10px;
 }
 
-.playlist-container::-webkit-scrollbar-track {
+.scroll-section::-webkit-scrollbar-track {
     border-radius: 10px;
     background-color: #ffffff1d;
 }
 
-.playlist-container::-webkit-scrollbar-thumb {
+.scroll-section::-webkit-scrollbar-thumb {
     background-color: green;
     border-radius: 10px;
 }
@@ -196,16 +196,17 @@ hr {
     display: flex;
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 2em;
 }
 
 .sec-nav-item {
     position: relative;
     height: 30px;
-    margin: 1.5em 0 2em;
+    margin: 1em 0 0;
 }
 
-.sec-nav-item a{
+.sec-nav-item a {
    font-size: 16px;
 }
 
@@ -241,7 +242,6 @@ hr {
     align-items: flex-start;
     gap: 1em;
     width: 100%;
-    min-width: 600px;
 }
 
 .card-album {

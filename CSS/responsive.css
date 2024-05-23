@@ -1,0 +1,22 @@
+@media screen and (max-width: 878px) {
+    .sec-nav-item a {
+        font-size: 14px;
+     }
+     .card-album {
+        width: calc(100% / 4 - 1em);
+    }
+    .flex-container {
+        flex-wrap: wrap;
+    }
+    
+    .left-player {
+        width: 25%;
+        gap: 0.5em;
+     }
+
+     .main-zone {
+        width: 50%;
+        text-align: center;
+    }
+}
+
